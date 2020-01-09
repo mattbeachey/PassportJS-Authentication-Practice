@@ -21,6 +21,8 @@ const handleFormModify = function(event) {
   };
   console.log(userInput)
   axios.put(`/api/examples/${userInput.email}`, userInput)
+  //in this .then, you could send back the meeting ID in the res.JSON and then grab it here to display -
+  //-that way there'd be no issue with the data not being ready before the DOM tries to display it
   .then(function (response) {
     console.log(response);
     refreshExamples();

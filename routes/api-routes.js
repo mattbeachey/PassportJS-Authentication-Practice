@@ -50,7 +50,7 @@ module.exports = function (app) {
         // Since we're doing a POST with javascript, we can't actually redirect that post into a GET request
         // So we're sending the user back the route to the members page because the redirect will happen on the front end
         // They won't get this or even be able to access this page if they aren't authed
-        const sendBack = { url: "/members", user: req.body.email }
+        const sendBack = { url: "/members", user: req.body.email } //do this to send back the meeting ID to then display on the user's member page
         res.json(sendBack);
     });
     //
