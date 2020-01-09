@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Full Stack Burger Shack</title>
+</head>
+
+<body>
+    <div class="top-div"></div>
+    <div class="fill-in-div-hide" id="fillInDiv"></div>
+    <div class="about-text" id="aboutText"></div>
+
+    <div class="title-box">
+        <h3>Full Stack</h3>
+        <h1>Burger Shack</h1>
+    </div>
+    <div class="about-box" id="about-box">
+        <div class="bar1" id="bar1"></div>
+        <div class="bar2" id="bar2"></div>
+        <div class="bar3" id="bar3"></div>
+    </div>
+
+    <div class="container">
+        <input id="burgerName" placeholder="Create your dream burger">
+        <button id="addBurger" class="add-button">Add a burger</button>
+        <div class="burger-box">
+            <div class="burger">
+                <div class="top-bun">
+                    <h2>Burgers to eat</h2>
+                </div>
+                <div id="unEaten" class="uneaten"></div>
+                <div class="bottom-bun"></div>
+            </div>
+            <div class="burger">
+                <div class="top-bun">
+                    <h2>Burgers Eaten</h2>
+                </div>
+                <div id="eaten" class="eaten"></div>
+                <div class="bottom-bun"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
