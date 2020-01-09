@@ -20,4 +20,12 @@ module.exports = function (sequelize, DataTypes) {
 
     return burgers
 
+    // User.beforeCreate(user => {
+    //     user.password = bcrypt.hashSync(
+    //         user.password,
+    //         bcrypt.genSaltSync(10),
+    //         null
+    //     );
+    // });
+
 };
