@@ -1,7 +1,7 @@
 //left to do:
 //if user adds burger with no name, error message? or randomly generated burger name?
 
-
+console.log(window.location)
 const burgerInputEl = document.getElementById("burgerName")
 const burgerButtonEl = document.getElementById("addBurger")
 

@@ -14,7 +14,9 @@ module.exports = function(sequelize, DataTypes) {
     password: {
     type: DataTypes.STRING,
     allowNull: false
-    }
+    },
+    text: DataTypes.STRING,
+    description: DataTypes.TEXT
     }, {
     hooks: {
     beforeCreate: function(user) {
